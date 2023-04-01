@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="e639638b-8554-4844-b579-a06200e247ad" Name="Deploy - Allround" Description="RGVwbG95cyBBbGxyb3VuZA0KdjEuMC4yDQpCYXNlZCBvbiBBdXRvbWF0aW9uIFBvbGljeSBmcm9tIFdpbGx5V2FzSGVyZVRvZGF5IChodHRwczovL3d3dy5yZWRkaXQuY29tL3IvTmFibGUvY29tbWVudHMvYW85dHdkL2F1dG9tYXRpb25fbWFuYWdlcl9pbnN0YWxsX2lmX3NvZnR3YXJlX2lzX25vdC8p" Version="2.19.0.1" MinRequiredVersion="2.19.0.1" RemoteCategory="0" ExecutionType="CurrentLoggedOnUser" MinimumPSVersionRequired="3.0">
+  <Object ID="{6db498d1-f33a-41fe-8893-344fb2323c6b}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;Parameters&gt;&lt;Parameter ParameterName=&quot;CurrentVersion&quot; Label=&quot;Latest version of the program&quot; ParameterType=&quot;string&quot; Value=&quot;3.14.15&quot; /&gt;&lt;Parameter ParameterName=&quot;DownloadURL&quot; Label=&quot;URL to download the program&quot; ParameterType=&quot;string&quot; Value=&quot;https://help.me/Iamstuckhere&quot; /&gt;&lt;Parameter ParameterName=&quot;ApplicationName&quot; Label=&quot;Applications name&quot; ParameterType=&quot;string&quot; Value=&quot;TheWookieMadeMeDoIt&quot; /&gt;&lt;Parameter ParameterName=&quot;InstallArguments&quot; Label=&quot;Install arguments&quot; ParameterType=&quot;string&quot; Value=&quot;/S&quot; /&gt;&lt;/Parameters&gt;&lt;GlobalVariables&gt;&lt;Parameter ParameterName=&quot;logname&quot; Label=&quot;logname&quot; ParameterType=&quot;string&quot; Value=&quot;Application&quot; /&gt;&lt;Parameter ParameterName=&quot;logsource&quot; Label=&quot;logsource&quot; ParameterType=&quot;string&quot; Value=&quot;NCentral Initial Installer&quot; /&gt;&lt;Parameter ParameterName=&quot;logid&quot; Label=&quot;logid&quot; ParameterType=&quot;number&quot; Value=&quot;777&quot; /&gt;&lt;Parameter ParameterName=&quot;Wirless&quot; Label=&quot;Wirless&quot; ParameterType=&quot;number&quot; Value=&quot;0&quot; /&gt;&lt;/GlobalVariables&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" />
+  </LinkManager>
+  <Diagnostics OriginalVersion="2.19.1.3" />
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>1477,9365</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy Builder" sap:VirtualizedContainerService.HintSize="1477,9365" MinRequiredVersion="2.19.0.1" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Starting {0} Initial Installer String" FormattedString="[FormatString_FormattedString]" sap:VirtualizedContainerService.HintSize="1441,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="3328f695-f2e4-4ea5-b6b3-c7faad233032" Result="[FormatString_Result]" ResultString="[FormatString_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="Starting {0} Initial Installer" Text_DisplayArg="Starting {0} Initial Installer" TypeName="FormatString" m_bTextLinkChange="False" />
+        <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Start Event" EventId="[logid]" EventId_DisplayArg="Global Variables.logid" sap:VirtualizedContainerService.HintSize="1441,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString]" Message_DisplayArg="Starting {0} Initial Installer String.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="cc2e22f5-8116-4e3c-ab7f-0e779323909c" Result="[CreateEvent_Result_4]" ResultString="[CreateEvent_ResultString_4]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Information" TypeName="CreateEvent" Type_DisplayArg="Information" m_bTextLinkChange="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </p:CreateEvent>
+        <p:CreateFolder Folder_Item="{x:Null}" Folder_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" DisplayName="Create Folder" Folder="C:\WSetup\" FolderInfo="[CreateFolder_FolderInfo]" Folder_DisplayArg="C:\WSetup\" sap:VirtualizedContainerService.HintSize="1441,88" MinRequiredVersion="2.10.0.19" Moniker="ccc9951e-3dae-46b4-ae2b-d882c67036b5" Result="[CreateFolder_Result]" ResultString="[CreateFolder_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="CreateFolder" m_bTextLinkChange="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </p:CreateFolder>
+        <p:CreateFolder Folder_Item="{x:Null}" Folder_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" DisplayName="Create Folder" Folder="C:\Temp\" FolderInfo="[CreateFolder_FolderInfo_1]" Folder_DisplayArg="C:\Temp\" sap:VirtualizedContainerService.HintSize="1441,88" MinRequiredVersion="2.10.0.19" Moniker="5a37e02b-c2a4-4bbc-92f4-d60e924363c6" Result="[CreateFolder_Result_1]" ResultString="[CreateFolder_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="CreateFolder" m_bTextLinkChange="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </p:CreateFolder>
+        <p:SoftwareInventory AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" DisplayName="Get Installed Software" sap:VirtualizedContainerService.HintSize="1441,81" MinRequiredVersion="2.10.0.19" Moniker="fc25b7a3-1cbb-4d41-a2e1-968862eaf882" Programs="[SoftwareInventory_Programs]" Result="[SoftwareInventory_Result]" ResultString="[SoftwareInventory_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="SoftwareInventory" m_bTextLinkChange="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </p:SoftwareInventory>
+        <p:ForEachLoop CollectionName_Item="{x:Null}" CollectionName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" CollectionName="[SoftwareInventory_Programs]" CollectionName_DisplayArg="Get Installed Software.Programs" DisplayName="ForEach" sap:VirtualizedContainerService.HintSize="1441,2422" ItemValue="[ForEachLoop_ItemValue]" MinRequiredVersion="2.10.0.19" Moniker="0773afa9-6605-4723-8f20-71768f461010" Result="[ForEachLoop_Result]" ResultString="[ForEachLoop_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="ForEachLoop" m_bTextLinkChange="False">
+          <p:ForEachLoop.Each>
+            <p:ForEachSequence DisplayName="Row" sap:VirtualizedContainerService.HintSize="1138,2322">
+              <p:ForEachSequence.Activities>
+                <p:IfObject CaseSensitive_Item="{x:Null}" CaseSensitive_ItemProp="{x:Null}" Condition_Item="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable="{x:Null}" VerboseOutput_Item="{x:Null}" VerboseOutput_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" CaseSensitive="True" CaseSensitive_DisplayArg="true" Condition="contains" Condition_DisplayArg="contains" DisplayName="If" sap:VirtualizedContainerService.HintSize="1100,2172" MinRequiredVersion="2.19.0.1" Moniker="663ff921-3985-4205-9583-5e500662b686" Result="[IfObject_Result]" ResultString="[IfObject_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfObject" Value="[ApplicationName]" Value_DisplayArg="Input Parameters.Applications name" Value_Type="x:String" Variable_DisplayArg="ForEach.Get Installed Software.Programs.Name" Variable_Item="[ForEachLoop_ItemValue]" Variable_ItemProp="Name" Variable_Type="x:String" VerboseOutput="False" VerboseOutput_DisplayArg="" m_bTextLinkChange="False">
+                  <p:IfObject.IfOption>
+                    <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="1068,1899" Name="SequenceActivity">
+                      <p:SequenceActivity.Activities>
+                        <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Checking application String" FormattedString="[FormatString_FormattedString_1]" sap:VirtualizedContainerService.HintSize="1030,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="6905b320-9204-4971-8944-a6183481659a" Result="[FormatString_Result_1]" ResultString="[FormatString_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="Checking {0}" Text_DisplayArg="Checking {0}" TypeName="FormatString" m_bTextLinkChange="False" />
+                        <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Create Event" EventId="777" EventId_DisplayArg="777" sap:VirtualizedContainerService.HintSize="1030,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString_1]" Message_DisplayArg="Checking application String.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="d329db1f-0b96-4386-aec9-8e6ea71ebd51" Result="[CreateEvent_Result_9]" ResultString="[CreateEvent_ResultString_9]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Information" TypeName="CreateEvent" Type_DisplayArg="Information" m_bTextLinkChange="False" />
+                        <p:CompareSoftwareVersion VersionA="{x:Null}" VersionB_Item="{x:Null}" VersionB_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" ComparisonResult="[CompareSoftwareVersion_ComparisonResult]" ComparisonResultShort="[CompareSoftwareVersion_ComparisonResultShort]" DisplayName="Compare Software Version" sap:VirtualizedContainerService.HintSize="1030,124" MinRequiredVersion="2.17.0.1" Moniker="2b9d0736-a40b-4522-b592-7736f2c4393b" OutPut_64="[CompareSoftwareVersion_OutPut_64]" Result="[CompareSoftwareVersion_Result]" ResultString="[CompareSoftwareVersion_ResultString]" Results_x64="[CompareSoftwareVersion_Results_x64]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="CompareSoftwareVersion" VersionA_DisplayArg="ForEach.Get Installed Software.Programs.Version" VersionA_Item="[ForEachLoop_ItemValue]" VersionA_ItemProp="Version" VersionB="[CurrentVersion]" VersionB_DisplayArg="Input Parameters.Latest version of the program" m_bTextLinkChange="False" />
+                        <p:IfElse CaseSensitive_Item="{x:Null}" CaseSensitive_ItemProp="{x:Null}" Condition_Item="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" CaseSensitive="True" CaseSensitive_DisplayArg="true" Condition="equals" Condition_DisplayArg="equals" DisplayName="If/Else" sap:VirtualizedContainerService.HintSize="1030,1077" MinRequiredVersion="2.19.0.1" Moniker="8e09a48d-aa29-4157-b365-8510e9183490" Result="[IfElse_Result_2]" ResultString="[IfElse_ResultString_2]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfElse" Value_DisplayArg="B" Value_Type="x:String" Variable="[CompareSoftwareVersion_ComparisonResultShort]" Variable_DisplayArg="Compare Software Version.Comparison Result Short" Variable_Type="x:String" m_bTextLinkChange="False">
+                          <p:IfElse.ElseOption>
+                            <p:SequenceActivity DisplayName="Else" sap:VirtualizedContainerService.HintSize="441,840" Name="SequenceActivity">
+                              <p:SequenceActivity.Activities>
+                                <p:Assignment Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" DisplayName="Global Variable Assignment" sap:VirtualizedContainerService.HintSize="403,182" MinRequiredVersion="2.10.0.19" Moniker="9e0ac8b2-773a-43ea-81b0-53e64edffa2f" Result="[Assignment_Result_1]" ResultString="[Assignment_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="Assignment" Value_DisplayArg="1" Value_Type="x:Double" Variable="[Wirless]" Variable_DisplayArg="Global Variables.Wirless" Variable_Type="x:Double" m_bTextLinkChange="False">
+                                  <p:Assignment.Value>
+                                    <InArgument x:TypeArguments="x:Object">
+                                      <p:ObjectLiteral>
+                                        <p:ObjectLiteral.Value>
+                                          <x:Double>1</x:Double>
+                                        </p:ObjectLiteral.Value>
+                                      </p:ObjectLiteral>
+                                    </InArgument>
+                                  </p:Assignment.Value>
+                                </p:Assignment>
+                                <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Application is current String" FormattedString="[FormatString_FormattedString_3]" sap:VirtualizedContainerService.HintSize="403,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="79d69277-abe3-4f66-94e2-4d8abb5dd157" Result="[FormatString_Result_3]" ResultString="[FormatString_ResultString_3]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="{}{0} is current" Text_DisplayArg="{}{0} is current" TypeName="FormatString" m_bTextLinkChange="False" />
+                                <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Create Event" EventId="777" EventId_DisplayArg="777" sap:VirtualizedContainerService.HintSize="403,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString_3]" Message_DisplayArg="Application is current String.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="29acb084-2445-496d-9081-87f47258c719" Result="[CreateEvent_Result_8]" ResultString="[CreateEvent_ResultString_8]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Information" TypeName="CreateEvent" Type_DisplayArg="Information" m_bTextLinkChange="False" />
+                              </p:SequenceActivity.Activities>
+                              <p:SequenceActivity.Variables>
+                                <Variable x:TypeArguments="x:Double" Name="Assignment_Result_1" />
+                                <Variable x:TypeArguments="x:String" Name="Assignment_ResultString_1" />
+                                <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_8" />
+                                <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_8" />
+                                <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_3" />
+                                <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_3" />
+                                <Variable x:TypeArguments="x:Double" Name="FormatString_Result_3" />
+                              </p:SequenceActivity.Variables>
+                            </p:SequenceActivity>
+                          </p:IfElse.ElseOption>
+                          <p:IfElse.IfOption>
+                            <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="545,840" Name="SequenceActivity">
+                              <p:SequenceActivity.Activities>
+                                <p:Assignment Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" DisplayName="Global Variable Assignment" sap:VirtualizedContainerService.HintSize="507,182" MinRequiredVersion="2.10.0.19" Moniker="587cfcfd-f16e-446d-a1fa-b877a889ea5e" Result="[Assignment_Result]" ResultString="[Assignment_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="Assignment" Value_DisplayArg="0" Value_Type="x:Double" Variable="[Wirless]" Variable_DisplayArg="Global Variables.Wirless" Variable_Type="x:Double" m_bTextLinkChange="False">
+                                  <p:Assignment.Value>
+                                    <InArgument x:TypeArguments="x:Object">
+                                      <p:ObjectLiteral>
+                                        <p:ObjectLiteral.Value>
+                                          <x:Double>0</x:Double>
+                                        </p:ObjectLiteral.Value>
+                                      </p:ObjectLiteral>
+                                    </InArgument>
+                                  </p:Assignment.Value>
+                                </p:Assignment>
+                                <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Application has been flagged for update String" FormattedString="[FormatString_FormattedString_2]" sap:VirtualizedContainerService.HintSize="507,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="c33736e9-9422-4057-858e-577f9d9f17ef" Result="[FormatString_Result_2]" ResultString="[FormatString_ResultString_2]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="{}{0} has been flagged for update" Text_DisplayArg="{}{0} has been flagged for update" TypeName="FormatString" m_bTextLinkChange="False" />
+                                <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Create Event" EventId="777" EventId_DisplayArg="777" sap:VirtualizedContainerService.HintSize="507,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString_2]" Message_DisplayArg="Application has been flagged for update String.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="3b899825-51f4-47f1-9f22-bfb5c0b866b9" Result="[CreateEvent_Result_7]" ResultString="[CreateEvent_ResultString_7]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Warning" TypeName="CreateEvent" Type_DisplayArg="Warning" m_bTextLinkChange="False" />
+                              </p:SequenceActivity.Activities>
+                              <p:SequenceActivity.Variables>
+                                <Variable x:TypeArguments="x:Double" Name="Assignment_Result" />
+                                <Variable x:TypeArguments="x:String" Name="Assignment_ResultString" />
+                                <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_7" />
+                                <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_7" />
+                                <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_2" />
+                                <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_2" />
+                                <Variable x:TypeArguments="x:Double" Name="FormatString_Result_2" />
+                              </p:SequenceActivity.Variables>
+                            </p:SequenceActivity>
+                          </p:IfElse.IfOption>
+                          <p:IfElse.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <p:ObjectLiteral Value="B" />
+                            </InArgument>
+                          </p:IfElse.Value>
+                        </p:IfElse>
+                      </p:SequenceActivity.Activities>
+                      <p:SequenceActivity.Variables>
+                        <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_9" />
+                        <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_9" />
+                        <Variable x:TypeArguments="x:Double" Name="IfElse_Result_2" />
+                        <Variable x:TypeArguments="x:String" Name="IfElse_ResultString_2" />
+                        <Variable x:TypeArguments="x:String" Name="CompareSoftwareVersion_ComparisonResult" />
+                        <Variable x:TypeArguments="x:String" Name="CompareSoftwareVersion_ComparisonResultShort" />
+                        <Variable x:TypeArguments="x:String" Name="CompareSoftwareVersion_OutPut_64" />
+                        <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="CompareSoftwareVersion_Results_x64" />
+                        <Variable x:TypeArguments="x:String" Name="CompareSoftwareVersion_ResultString" />
+                        <Variable x:TypeArguments="x:Double" Name="CompareSoftwareVersion_Result" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_1" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_1" />
+                        <Variable x:TypeArguments="x:Double" Name="FormatString_Result_1" />
+                      </p:SequenceActivity.Variables>
+                    </p:SequenceActivity>
+                  </p:IfObject.IfOption>
+                </p:IfObject>
+              </p:ForEachSequence.Activities>
+              <p:ForEachSequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="IfObject_ResultString" />
+                <Variable x:TypeArguments="x:Double" Name="IfObject_Result" />
+              </p:ForEachSequence.Variables>
+            </p:ForEachSequence>
+          </p:ForEachLoop.Each>
+        </p:ForEachLoop>
+        <p:IfObject CaseSensitive_Item="{x:Null}" CaseSensitive_ItemProp="{x:Null}" Condition_Item="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" VerboseOutput_Item="{x:Null}" VerboseOutput_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" CaseSensitive="True" CaseSensitive_DisplayArg="true" Condition="equals" Condition_DisplayArg="equals" DisplayName="If" sap:VirtualizedContainerService.HintSize="1441,5287" MinRequiredVersion="2.19.0.1" Moniker="ed2540c0-ca98-4766-a79e-0403b19495ae" Result="[IfObject_Result_1]" ResultString="[IfObject_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfObject" Value_DisplayArg="0" Value_Type="x:Double" Variable="[Wirless]" Variable_DisplayArg="Global Variables.Wirless" Variable_Type="x:Double" VerboseOutput="False" VerboseOutput_DisplayArg="" m_bTextLinkChange="False">
+          <p:IfObject.IfOption>
+            <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="1409,5014" Name="SequenceActivity">
+              <p:SequenceActivity.Activities>
+                <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Application needs installed or is out of date String" FormattedString="[FormatString_FormattedString_4]" sap:VirtualizedContainerService.HintSize="1371,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="505a766c-999c-4214-a839-c371087aef9b" Result="[FormatString_Result_4]" ResultString="[FormatString_ResultString_4]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="{}{0} needs installed or is out of date." Text_DisplayArg="{}{0} needs installed or is out of date." TypeName="FormatString" m_bTextLinkChange="False" />
+                <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Create Event" EventId="[logid]" EventId_DisplayArg="Global Variables.logid" sap:VirtualizedContainerService.HintSize="1371,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString_4]" Message_DisplayArg="Application needs installed or is out of date String.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="93e0cce7-19e8-4daa-8519-7148e614f77f" Result="[CreateEvent_Result_1]" ResultString="[CreateEvent_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Warning" TypeName="CreateEvent" Type_DisplayArg="Warning" m_bTextLinkChange="False" />
+                <p:IfElse CaseSensitive_Item="{x:Null}" CaseSensitive_ItemProp="{x:Null}" Condition_Item="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" CaseSensitive="False" CaseSensitive_DisplayArg="false" Condition="contains" Condition_DisplayArg="contains" DisplayName="If/Else" sap:VirtualizedContainerService.HintSize="1371,783" MinRequiredVersion="2.19.0.1" Moniker="b6500470-f982-4743-ba3b-6d5b3906105e" Result="[IfElse_Result_1]" ResultString="[IfElse_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfElse" Value_DisplayArg="msi" Value_Type="x:String" Variable="[DownloadURL]" Variable_DisplayArg="Input Parameters.URL to download the program" Variable_Type="x:String" m_bTextLinkChange="False">
+                  <p:IfElse.ElseOption>
+                    <p:SequenceActivity DisplayName="Else" sap:VirtualizedContainerService.HintSize="403,546" Name="SequenceActivity">
+                      <p:SequenceActivity.Activities>
+                        <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="exe installerString" FormattedString="[FormatString_FormattedString_11]" sap:VirtualizedContainerService.HintSize="365,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="c78ef298-15a1-4663-b660-4ec78a89f71c" Result="[FormatString_Result_11]" ResultString="[FormatString_ResultString_11]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="{}{0}.exe" Text_DisplayArg="{}{0}.exe" TypeName="FormatString" m_bTextLinkChange="False" />
+                        <p:SetEnvironmentVariable Type_Item="{x:Null}" Type_ItemProp="{x:Null}" UserName="{x:Null}" UserName_DisplayArg="{x:Null}" UserName_Item="{x:Null}" UserName_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Set Environment Variable" sap:VirtualizedContainerService.HintSize="365,196" MinRequiredVersion="2.10.0.19" Moniker="c23f3ec2-62d8-4978-b413-57c8e337bde6" Result="[SetEnvironmentVariable_Result_1]" ResultString="[SetEnvironmentVariable_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Type="Process" TypeName="SetEnvironmentVariable" Type_DisplayArg="Process" Value="[FormatString_FormattedString_11]" Value_DisplayArg="exe installerString.FormattedString" Variable="Installer" Variable_DisplayArg="Installer" m_bTextLinkChange="False" />
+                      </p:SequenceActivity.Activities>
+                      <p:SequenceActivity.Variables>
+                        <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_11" />
+                        <Variable x:TypeArguments="x:Double" Name="FormatString_Result_11" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_11" />
+                        <Variable x:TypeArguments="x:String" Name="SetEnvironmentVariable_ResultString_1" />
+                        <Variable x:TypeArguments="x:Double" Name="SetEnvironmentVariable_Result_1" />
+                      </p:SequenceActivity.Variables>
+                    </p:SequenceActivity>
+                  </p:IfElse.ElseOption>
+                  <p:IfElse.IfOption>
+                    <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="403,546" Name="SequenceActivity">
+                      <p:SequenceActivity.Activities>
+                        <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="msi installer String" FormattedString="[FormatString_FormattedString_10]" sap:VirtualizedContainerService.HintSize="365,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="7f1c4db0-915e-41cf-896e-a9e7c260ea26" Result="[FormatString_Result_10]" ResultString="[FormatString_ResultString_10]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="{}{0}.msi" Text_DisplayArg="{}{0}.msi" TypeName="FormatString" m_bTextLinkChange="False" />
+                        <p:SetEnvironmentVariable Type_Item="{x:Null}" Type_ItemProp="{x:Null}" UserName="{x:Null}" UserName_DisplayArg="{x:Null}" UserName_Item="{x:Null}" UserName_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Set msi installer String" sap:VirtualizedContainerService.HintSize="365,196" MinRequiredVersion="2.10.0.19" Moniker="34ff6d69-ef1a-4cf0-9e48-dd5547c1859f" Result="[SetEnvironmentVariable_Result]" ResultString="[SetEnvironmentVariable_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Type="Process" TypeName="SetEnvironmentVariable" Type_DisplayArg="Process" Value="[FormatString_FormattedString_10]" Value_DisplayArg="msi installer String.FormattedString" Variable="Installer" Variable_DisplayArg="Installer" m_bTextLinkChange="False" />
+                      </p:SequenceActivity.Activities>
+                      <p:SequenceActivity.Variables>
+                        <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_10" />
+                        <Variable x:TypeArguments="x:Double" Name="FormatString_Result_10" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_10" />
+                        <Variable x:TypeArguments="x:String" Name="SetEnvironmentVariable_ResultString" />
+                        <Variable x:TypeArguments="x:Double" Name="SetEnvironmentVariable_Result" />
+                      </p:SequenceActivity.Variables>
+                    </p:SequenceActivity>
+                  </p:IfElse.IfOption>
+                  <p:IfElse.Value>
+                    <InArgument x:TypeArguments="x:Object">
+                      <p:ObjectLiteral Value="msi" />
+                    </InArgument>
+                  </p:IfElse.Value>
+                </p:IfElse>
+                <p:GetEnvironmentVariable Type_Item="{x:Null}" Type_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Get installer String" sap:VirtualizedContainerService.HintSize="1371,124" MinRequiredVersion="2.10.0.19" Moniker="6c7e459d-762d-4cfe-a446-d4238e49f894" Result="[GetEnvironmentVariable_Result]" ResultString="[GetEnvironmentVariable_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Type="Process" TypeName="GetEnvironmentVariable" Type_DisplayArg="Process" Value="[GetEnvironmentVariable_Value]" Variable="Installer" Variable_DisplayArg="Installer" m_bTextLinkChange="False" />
+                <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Save location" FormattedString="[FormatString_FormattedString_5]" sap:VirtualizedContainerService.HintSize="1371,160" Input0="[GetEnvironmentVariable_Value]" Input0_DisplayArg="Get installer String.Value" MinRequiredVersion="2.10.0.19" Moniker="dc7f9836-cb1c-46aa-9ef7-678e291b8d0b" Result="[FormatString_Result_5]" ResultString="[FormatString_ResultString_5]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="C:\Temp\{0}" Text_DisplayArg="C:\Temp\{0}" TypeName="FormatString" m_bTextLinkChange="False" />
+                <p:DownloadFileFromURL OverwriteExistingFile_Item="{x:Null}" OverwriteExistingFile_ItemProp="{x:Null}" RemoteFileURL_Item="{x:Null}" RemoteFileURL_ItemProp="{x:Null}" SaveAsFileName_Item="{x:Null}" SaveAsFileName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" DisplayName="Download File From URL" sap:VirtualizedContainerService.HintSize="1371,160" MinRequiredVersion="2.18.0.1" Moniker="d832bf61-3d53-4a4a-a98e-24fd223e6fe3" OverwriteExistingFile="True" OverwriteExistingFile_DisplayArg="true" RemoteFileURL="[DownloadURL]" RemoteFileURL_DisplayArg="Input Parameters.URL to download the program" Result="[DownloadFileFromURL_Result]" ResultString="[DownloadFileFromURL_ResultString]" RunAsCurrentLoggedOnUser="False" SaveAsFileName="[FormatString_FormattedString_5]" SaveAsFileName_DisplayArg="Save location.FormattedString" ScriptExecutionMethod="ExecuteDebug" TypeName="DownloadFileFromURL" m_bTextLinkChange="False" />
+                <p:FileExists File_Item="{x:Null}" File_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Conditional="[FileExists_Conditional]" DisplayName="File Exists" File="[FormatString_FormattedString_5]" File_DisplayArg="Save location.FormattedString" sap:VirtualizedContainerService.HintSize="1371,88" MinRequiredVersion="2.10.0.19" Moniker="38a51ccd-7702-4719-8e35-b593ac23377a" Result="[FileExists_Result]" ResultString="[FileExists_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="FileExists" m_bTextLinkChange="False" />
+                <p:IfElse CaseSensitive_Item="{x:Null}" CaseSensitive_ItemProp="{x:Null}" Condition_Item="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" CaseSensitive="False" CaseSensitive_DisplayArg="true" Condition="equals" Condition_DisplayArg="equals" DisplayName="If/Else" sap:VirtualizedContainerService.HintSize="1371,1618" MinRequiredVersion="2.19.0.1" Moniker="49c8bda9-db93-415a-baab-20d765711fea" Result="[IfElse_Result_3]" ResultString="[IfElse_ResultString_3]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfElse" Value_DisplayArg="True" Value_Type="x:String" Variable="[FileExists_Conditional]" Variable_DisplayArg="File Exists.Conditional" Variable_Type="x:String" m_bTextLinkChange="False">
+                  <p:IfElse.ElseOption>
+                    <p:SequenceActivity DisplayName="Else" sap:VirtualizedContainerService.HintSize="393,418" Name="SequenceActivity">
+                      <p:SequenceActivity.Activities>
+                        <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Create Event" EventId="777" EventId_DisplayArg="777" sap:VirtualizedContainerService.HintSize="355,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="File download failed" Message_DisplayArg="File download failed" MinRequiredVersion="2.10.0.19" Moniker="4e742fb8-4e01-4f41-992b-25db2daa8df2" Result="[CreateEvent_Result_11]" ResultString="[CreateEvent_ResultString_11]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Error" TypeName="CreateEvent" Type_DisplayArg="Error" m_bTextLinkChange="False" />
+                      </p:SequenceActivity.Activities>
+                      <p:SequenceActivity.Variables>
+                        <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_11" />
+                        <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_11" />
+                      </p:SequenceActivity.Variables>
+                    </p:SequenceActivity>
+                  </p:IfElse.ElseOption>
+                  <p:IfElse.IfOption>
+                    <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="934,1381" Name="SequenceActivity">
+                      <p:SequenceActivity.Activities>
+                        <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Installing application update String" FormattedString="[FormatString_FormattedString_6]" sap:VirtualizedContainerService.HintSize="896,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="3b734b1f-b791-41a7-86de-9386bb2d27d0" Result="[FormatString_Result_6]" ResultString="[FormatString_ResultString_6]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="Installing {0} update" Text_DisplayArg="Installing {0} update" TypeName="FormatString" m_bTextLinkChange="False" />
+                        <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Create Event" EventId="777" EventId_DisplayArg="777" sap:VirtualizedContainerService.HintSize="896,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString_6]" Message_DisplayArg="Installing application update String.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="c433e8ac-6799-4654-bd26-47a45019ad2b" Result="[CreateEvent_Result_2]" ResultString="[CreateEvent_ResultString_2]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Information" TypeName="CreateEvent" Type_DisplayArg="Information" m_bTextLinkChange="False" />
+                        <p:IfElse CaseSensitive_Item="{x:Null}" CaseSensitive_ItemProp="{x:Null}" Condition_Item="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" CaseSensitive="False" CaseSensitive_DisplayArg="false" Condition="contains" Condition_DisplayArg="contains" DisplayName="If/Else" sap:VirtualizedContainerService.HintSize="896,723" MinRequiredVersion="2.19.0.1" Moniker="218cda8e-2ea8-40cd-89cf-70b6cd60c068" Result="[IfElse_Result_4]" ResultString="[IfElse_ResultString_4]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfElse" Value_DisplayArg="msi" Value_Type="x:String" Variable="[DownloadURL]" Variable_DisplayArg="Input Parameters.URL to download the program" Variable_Type="x:String" m_bTextLinkChange="False">
+                          <p:IfElse.ElseOption>
+                            <p:SequenceActivity DisplayName="Else" sap:VirtualizedContainerService.HintSize="451,486" Name="SequenceActivity">
+                              <p:SequenceActivity.Activities>
+                                <p:RunProgram Arguments_Item="{x:Null}" Arguments_ItemProp="{x:Null}" Program_Item="{x:Null}" Program_ItemProp="{x:Null}" RunAsType_Item="{x:Null}" RunAsType_ItemProp="{x:Null}" WaitForCompletion_Item="{x:Null}" WaitForCompletion_ItemProp="{x:Null}" WindowType_Item="{x:Null}" WindowType_ItemProp="{x:Null}" WorkingDirectory="{x:Null}" WorkingDirectory_DisplayArg="{x:Null}" WorkingDirectory_Item="{x:Null}" WorkingDirectory_ItemProp="{x:Null}" Arguments="[InstallArguments]" Arguments_DisplayArg="Input Parameters.Install arguments" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Run Program" sap:VirtualizedContainerService.HintSize="413,336" MinRequiredVersion="2.10.0.19" Moniker="00fea5b7-29b6-495c-b37f-e3089e8f7966" ProcessID="[RunProgram_ProcessID]" Program="[FormatString_FormattedString_5]" Program_DisplayArg="Save location.FormattedString" Result="[RunProgram_Result]" ResultString="[RunProgram_ResultString]" RunAsCurrentLoggedOnUser="True" RunAsType="LocalSystem" RunAsType_DisplayArg="CLU" ScriptExecutionMethod="None" TypeName="RunProgram" WaitForCompletion="True" WaitForCompletion_DisplayArg="" WindowType="Hidden" WindowType_DisplayArg="Hidden" m_bTextLinkChange="False" />
+                              </p:SequenceActivity.Activities>
+                              <p:SequenceActivity.Variables>
+                                <Variable x:TypeArguments="x:String" Name="RunProgram_ProcessID" />
+                                <Variable x:TypeArguments="x:String" Name="RunProgram_ResultString" />
+                                <Variable x:TypeArguments="x:Double" Name="RunProgram_Result" />
+                              </p:SequenceActivity.Variables>
+                            </p:SequenceActivity>
+                          </p:IfElse.ElseOption>
+                          <p:IfElse.IfOption>
+                            <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="401,418" Name="SequenceActivity">
+                              <p:SequenceActivity.Activities>
+                                <p:WindowsInstaller ActionType_Item="{x:Null}" ActionType_ItemProp="{x:Null}" CommandLineArguments_Item="{x:Null}" CommandLineArguments_ItemProp="{x:Null}" LogFilePath="{x:Null}" LogFilePath_DisplayArg="{x:Null}" LogFilePath_Item="{x:Null}" LogFilePath_ItemProp="{x:Null}" Mode_Item="{x:Null}" Mode_ItemProp="{x:Null}" MsiPath_Item="{x:Null}" MsiPath_ItemProp="{x:Null}" Restart_Item="{x:Null}" Restart_ItemProp="{x:Null}" ActionType="Install" ActionType_DisplayArg="Install" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" CommandLineArguments="[InstallArguments]" CommandLineArguments_DisplayArg="Input Parameters.Install arguments" DisplayName="Windows Installer" sap:VirtualizedContainerService.HintSize="363,268" MinRequiredVersion="2.10.0.19" Mode="QuietMode" Mode_DisplayArg="Quiet Mode" Moniker="0ac0b3e2-1bad-418e-ac0d-b0819d1c6e12" MsiPath="[FormatString_FormattedString_5]" MsiPath_DisplayArg="Save location.FormattedString" Restart="NoRestart" Restart_DisplayArg="No Restart" Result="[WindowsInstaller_Result]" ResultString="[WindowsInstaller_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="WindowsInstaller" m_bTextLinkChange="False" />
+                              </p:SequenceActivity.Activities>
+                              <p:SequenceActivity.Variables>
+                                <Variable x:TypeArguments="x:Double" Name="WindowsInstaller_Result" />
+                                <Variable x:TypeArguments="x:String" Name="WindowsInstaller_ResultString" />
+                              </p:SequenceActivity.Variables>
+                            </p:SequenceActivity>
+                          </p:IfElse.IfOption>
+                          <p:IfElse.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <p:ObjectLiteral Value="msi" />
+                            </InArgument>
+                          </p:IfElse.Value>
+                        </p:IfElse>
+                      </p:SequenceActivity.Activities>
+                      <p:SequenceActivity.Variables>
+                        <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_2" />
+                        <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_2" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_6" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_6" />
+                        <Variable x:TypeArguments="x:Double" Name="FormatString_Result_6" />
+                        <Variable x:TypeArguments="x:Double" Name="IfElse_Result_4" />
+                        <Variable x:TypeArguments="x:String" Name="IfElse_ResultString_4" />
+                      </p:SequenceActivity.Variables>
+                    </p:SequenceActivity>
+                  </p:IfElse.IfOption>
+                  <p:IfElse.Value>
+                    <InArgument x:TypeArguments="x:Object">
+                      <p:ObjectLiteral Value="True" />
+                    </InArgument>
+                  </p:IfElse.Value>
+                </p:IfElse>
+                <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Application wildcard String" FormattedString="[FormatString_FormattedString_12]" sap:VirtualizedContainerService.HintSize="1371,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="c268f48e-3749-48f5-b2df-f894351cfc27" Result="[FormatString_Result_12]" ResultString="[FormatString_ResultString_12]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="*{0}*" Text_DisplayArg="*{0}*" TypeName="FormatString" m_bTextLinkChange="False" />
+                <p:IsAppInstalled ApplicationName_Item="{x:Null}" ApplicationName_ItemProp="{x:Null}" ApplicationName="[FormatString_FormattedString_12]" ApplicationName_DisplayArg="Application wildcard String.FormattedString" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Conditional="[IsAppInstalled_Conditional]" DisplayName="Is Application Installed" sap:VirtualizedContainerService.HintSize="1371,88" MinRequiredVersion="2.10.0.19" Moniker="0081cc37-6883-483e-81af-614f0fd2f722" Result="[IsAppInstalled_Result]" ResultString="[IsAppInstalled_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IsAppInstalled" m_bTextLinkChange="False" />
+                <p:IfElse CaseSensitive_Item="{x:Null}" CaseSensitive_ItemProp="{x:Null}" Condition_Item="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" CaseSensitive="False" CaseSensitive_DisplayArg="true" Condition="equals" Condition_DisplayArg="equals" DisplayName="If/Else" sap:VirtualizedContainerService.HintSize="1371,855" MinRequiredVersion="2.19.0.1" Moniker="f7c4575b-623f-4055-94af-1fd94dcb1c69" Result="[IfElse_Result]" ResultString="[IfElse_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfElse" Value_DisplayArg="True" Value_Type="x:String" Variable="[IsAppInstalled_Conditional]" Variable_DisplayArg="Is Application Installed.Conditional" Variable_Type="x:String" m_bTextLinkChange="False">
+                  <p:IfElse.ElseOption>
+                    <p:SequenceActivity DisplayName="Else" sap:VirtualizedContainerService.HintSize="547,618" Name="SequenceActivity">
+                      <p:SequenceActivity.Activities>
+                        <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="There was an issue installing application String" FormattedString="[FormatString_FormattedString_8]" sap:VirtualizedContainerService.HintSize="509,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="7cd762ba-78f5-4833-80ef-e55119300cdc" Result="[FormatString_Result_8]" ResultString="[FormatString_ResultString_8]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="There was an issue installing {0}" Text_DisplayArg="There was an issue installing {0}" TypeName="FormatString" m_bTextLinkChange="False" />
+                        <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Create Event" EventId="777" EventId_DisplayArg="777" sap:VirtualizedContainerService.HintSize="509,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString_8]" Message_DisplayArg="There was an issue installing application String.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="dbf12e02-5736-4c98-98b9-795e3c96090f" Result="[CreateEvent_Result_5]" ResultString="[CreateEvent_ResultString_5]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Error" TypeName="CreateEvent" Type_DisplayArg="Error" m_bTextLinkChange="False" />
+                      </p:SequenceActivity.Activities>
+                      <p:SequenceActivity.Variables>
+                        <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_5" />
+                        <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_5" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_8" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_8" />
+                        <Variable x:TypeArguments="x:Double" Name="FormatString_Result_8" />
+                      </p:SequenceActivity.Variables>
+                    </p:SequenceActivity>
+                  </p:IfElse.ElseOption>
+                  <p:IfElse.IfOption>
+                    <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="553,618" Name="SequenceActivity">
+                      <p:SequenceActivity.Activities>
+                        <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Application has been installed or updated String" FormattedString="[FormatString_FormattedString_7]" sap:VirtualizedContainerService.HintSize="515,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="c6ec11f3-a79e-4742-abff-ef19a5971856" Result="[FormatString_Result_7]" ResultString="[FormatString_ResultString_7]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="{}{0} has been installed or updated" Text_DisplayArg="{}{0} has been installed or updated" TypeName="FormatString" m_bTextLinkChange="False" />
+                        <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Create Event" EventId="777" EventId_DisplayArg="777" sap:VirtualizedContainerService.HintSize="515,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString_7]" Message_DisplayArg="Application has been installed or updated String.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="c58df2fe-4405-4e46-b08c-0eeec1159788" Result="[CreateEvent_Result_3]" ResultString="[CreateEvent_ResultString_3]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Information" TypeName="CreateEvent" Type_DisplayArg="Information" m_bTextLinkChange="False" />
+                      </p:SequenceActivity.Activities>
+                      <p:SequenceActivity.Variables>
+                        <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_3" />
+                        <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_3" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_7" />
+                        <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_7" />
+                        <Variable x:TypeArguments="x:Double" Name="FormatString_Result_7" />
+                      </p:SequenceActivity.Variables>
+                    </p:SequenceActivity>
+                  </p:IfElse.IfOption>
+                  <p:IfElse.Value>
+                    <InArgument x:TypeArguments="x:Object">
+                      <p:ObjectLiteral Value="True" />
+                    </InArgument>
+                  </p:IfElse.Value>
+                </p:IfElse>
+              </p:SequenceActivity.Activities>
+              <p:SequenceActivity.Variables>
+                <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_1" />
+                <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_1" />
+                <Variable x:TypeArguments="x:Double" Name="DownloadFileFromURL_Result" />
+                <Variable x:TypeArguments="x:String" Name="DownloadFileFromURL_ResultString" />
+                <Variable x:TypeArguments="x:String" Name="FileExists_Conditional" />
+                <Variable x:TypeArguments="x:Double" Name="FileExists_Result" />
+                <Variable x:TypeArguments="x:String" Name="FileExists_ResultString" />
+                <Variable x:TypeArguments="x:Double" Name="IfElse_Result_3" />
+                <Variable x:TypeArguments="x:String" Name="IfElse_ResultString_3" />
+                <Variable x:TypeArguments="x:String" Name="IsAppInstalled_Conditional" />
+                <Variable x:TypeArguments="x:Double" Name="IsAppInstalled_Result" />
+                <Variable x:TypeArguments="x:String" Name="IsAppInstalled_ResultString" />
+                <Variable x:TypeArguments="x:Double" Name="IfElse_Result" />
+                <Variable x:TypeArguments="x:String" Name="IfElse_ResultString" />
+                <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_4" />
+                <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_4" />
+                <Variable x:TypeArguments="x:Double" Name="FormatString_Result_4" />
+                <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_5" />
+                <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_5" />
+                <Variable x:TypeArguments="x:Double" Name="FormatString_Result_5" />
+                <Variable x:TypeArguments="x:String" Name="GetEnvironmentVariable_Value" />
+                <Variable x:TypeArguments="x:String" Name="GetEnvironmentVariable_ResultString" />
+                <Variable x:TypeArguments="x:Double" Name="GetEnvironmentVariable_Result" />
+                <Variable x:TypeArguments="x:Double" Name="IfElse_Result_1" />
+                <Variable x:TypeArguments="x:String" Name="IfElse_ResultString_1" />
+                <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_12" />
+                <Variable x:TypeArguments="x:Double" Name="FormatString_Result_12" />
+                <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_12" />
+              </p:SequenceActivity.Variables>
+            </p:SequenceActivity>
+          </p:IfObject.IfOption>
+          <p:IfObject.Value>
+            <InArgument x:TypeArguments="x:Object">
+              <p:ObjectLiteral>
+                <p:ObjectLiteral.Value>
+                  <x:Double>0</x:Double>
+                </p:ObjectLiteral.Value>
+              </p:ObjectLiteral>
+            </InArgument>
+          </p:IfObject.Value>
+        </p:IfObject>
+        <p:FormatString Input0_Item="{x:Null}" Input0_ItemProp="{x:Null}" Input1="{x:Null}" Input1_DisplayArg="{x:Null}" Input1_Item="{x:Null}" Input1_ItemProp="{x:Null}" Text_Item="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.19.1.3, Culture=neutral, PublicKeyToken=null" DisplayName="Application Installer has completedString" FormattedString="[FormatString_FormattedString_9]" sap:VirtualizedContainerService.HintSize="1441,160" Input0="[ApplicationName]" Input0_DisplayArg="Input Parameters.Applications name" MinRequiredVersion="2.10.0.19" Moniker="0d4c767e-376e-4730-a63b-9ad4ef7a3358" Result="[FormatString_Result_9]" ResultString="[FormatString_ResultString_9]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Text="{}{0} Installer has completed" Text_DisplayArg="{}{0} Installer has completed" TypeName="FormatString" m_bTextLinkChange="False" />
+        <p:CreateEvent Category_Item="{x:Null}" Category_ItemProp="{x:Null}" EventId_Item="{x:Null}" EventId_ItemProp="{x:Null}" LogName_Item="{x:Null}" LogName_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" Source_Item="{x:Null}" Source_ItemProp="{x:Null}" Type_Item="{x:Null}" Type_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.3.0.66, Culture=neutral, PublicKeyToken=null" Category="1" Category_DisplayArg="1" DisplayName="Finish event" EventId="777" EventId_DisplayArg="777" sap:VirtualizedContainerService.HintSize="1441,268" LogName="[logname]" LogName_DisplayArg="Global Variables.logname" Message="[FormatString_FormattedString_9]" Message_DisplayArg="Application Installer has completedString.FormattedString" MinRequiredVersion="2.10.0.19" Moniker="629d9a1d-0d8e-420c-ac12-1ce7dd17bcda" Result="[CreateEvent_Result_6]" ResultString="[CreateEvent_ResultString_6]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" Source="[logsource]" Source_DisplayArg="Global Variables.logsource" Type="Information" TypeName="CreateEvent" Type_DisplayArg="Information" m_bTextLinkChange="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </p:CreateEvent>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="SoftwareInventory_Programs" />
+        <Variable x:TypeArguments="x:Double" Name="SoftwareInventory_Result" />
+        <Variable x:TypeArguments="x:String" Name="SoftwareInventory_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_4" />
+        <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_4" />
+        <Variable x:TypeArguments="x:String" Name="CreateFolder_FolderInfo" />
+        <Variable x:TypeArguments="x:String" Name="CreateFolder_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="CreateFolder_Result" />
+        <Variable x:TypeArguments="x:String" Name="CreateFolder_FolderInfo_1" />
+        <Variable x:TypeArguments="x:String" Name="CreateFolder_ResultString_1" />
+        <Variable x:TypeArguments="x:Double" Name="CreateFolder_Result_1" />
+        <Variable x:TypeArguments="x:Object" Name="ForEachLoop_ItemValue" />
+        <Variable x:TypeArguments="x:Double" Name="ForEachLoop_Result" />
+        <Variable x:TypeArguments="x:String" Name="ForEachLoop_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="CreateEvent_Result_6" />
+        <Variable x:TypeArguments="x:String" Name="CreateEvent_ResultString_6" />
+        <Variable x:TypeArguments="x:String" Name="IfObject_ResultString_1" />
+        <Variable x:TypeArguments="x:Double" Name="IfObject_Result_1" />
+        <Variable x:TypeArguments="x:String" Default="18.009.20050" Name="CurrentVersion" />
+        <Variable x:TypeArguments="x:String" Default="https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2101120039/AcroRdrDC2101120039_en_US.exe" Name="DownloadURL" />
+        <Variable x:TypeArguments="x:String" Default="Mozilla Firefox" Name="ApplicationName" />
+        <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString" />
+        <Variable x:TypeArguments="x:String" Name="FormatString_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="FormatString_Result" />
+        <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_9" />
+        <Variable x:TypeArguments="x:String" Name="FormatString_ResultString_9" />
+        <Variable x:TypeArguments="x:Double" Name="FormatString_Result_9" />
+        <Variable x:TypeArguments="x:String" Default="/S" Name="InstallArguments" />
+        <Variable x:TypeArguments="x:String" Default="Application" Name="logname" />
+        <Variable x:TypeArguments="x:String" Default="NCentral Initial Installer" Name="logsource" />
+        <Variable x:TypeArguments="x:Double" Default="777" Name="logid" />
+        <Variable x:TypeArguments="x:Double" Default="0" Name="Wirless" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>
